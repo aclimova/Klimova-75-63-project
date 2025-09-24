@@ -13,11 +13,11 @@
 
 Klimova-75-63-project/
 
-├── data_loader.py                   # Скрипт для отображения, преобразования и загрузки данных
+├── data_loader.py # Скрипт для отображения, преобразования и загрузки данных
 
-├── requirements.txt                # Установленные зависимости Python
+├── requirements.txt # Установленные зависимости Python
 
-└── README.md                       # Информация по проекту
+└── README.md # Информация по проекту
 
 
 **Ссылка на датасет:** [Biomass Data](https://drive.google.com/drive/folders/1TOftr_GOVv2wXgeg4S5GTd46YWDHC2Ls?usp=drive_link) 
