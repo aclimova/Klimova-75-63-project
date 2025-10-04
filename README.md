@@ -27,13 +27,19 @@
 ## Структура проекта
 
 Проект «Климова-75-63»
+
 │
+
 ├── data_loader.py                  # Обработка и загрузка данных о древесине
+
 ├── API_and_parse/
-│  ├── README_API_and_parse.md      # Запросы к RCSB PDB Data API
+
 │  ├── fetch_pdb_data.py           # Запросы к RCSB PDB Data API
+
 │   └── parse_and_save_pdb.py       # Парсер и сохранение CSV с данными PDB
+
 ├── requirements.txt                # Установленные зависимости Python
+
 └── README.md                       # Информация о проекте
 
 
