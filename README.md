@@ -8,7 +8,7 @@
 
 ---
 
-## Домашние задания
+## Задачи
 
 ### Создание исходного датасета
 - Формирование первичного набора данных  
@@ -21,7 +21,11 @@
 ### Обработка древесных данных
 - Загрузка данных из внешнего источника  
 - Очистка и трансформация данных  
-- Сохранение данных в CSV и Parquet  
+- Сохранение данных в CSV и Parquet
+
+### Работа с RCSB PDB Data API
+- Получение данных о структурах белков через API
+- Парсинг и сохранение в CSV 
 
 
 ## Структура проекта
@@ -45,6 +49,12 @@
 
 **Ссылка на датасет:** [Biomass Data](https://drive.google.com/drive/folders/1TOftr_GOVv2wXgeg4S5GTd46YWDHC2Ls?usp=drive_link) 
 
-**Пример вывода данных:**
+**Ссылка на API:** [Enzymes Scructure](https://data.rcsb.org/rest/v1/core/entry/{pdb_id})
+
+**Пример вывода данных по биомассе**
 
 <img width="795" height="620" alt="screenshot" src="https://github.com/user-attachments/assets/345ff719-20e7-4dff-99b9-a32712106360" />
+
+**Пример вывода данных по структуре фермента:**
+
+![Скриншот 04-10-2025 154419](https://github.com/user-attachments/assets/29247a26-9012-43e6-bf8c-ff9cacd8c0d5)
