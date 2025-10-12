@@ -86,26 +86,28 @@
 **1. Клонируйте репозиторий:**
   
  
-    git clone <ссылка на ваш репозиторий>
+    git clone <https://github.com/aclimova/Klimova-75-63-project>
     
-    cd <папка_проекта>
+    cd <Климова-75-63>
 
 
 **2. (Рекомендуется) создайте и активируйте виртуальное окружение:**
-
-  
+ 
     Для Windows:
+    
      
         python -m venv venv
       
         venv\Scripts\activate
-
-   
+        
+  
     Для macOS/Linux:
+    
        
         python3 -m venv venv
        
         source venv/bin/activate
+        
 
 **3. Установите зависимости:**
   
