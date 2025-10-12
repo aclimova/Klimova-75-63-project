@@ -84,39 +84,30 @@
 ## Быстрый старт
 
 **1. Клонируйте репозиторий:**
-  
  
     git clone <https://github.com/aclimova/Klimova-75-63-project>
     
     cd <Климова-75-63>
-
-
+    
 **2. (Рекомендуется) создайте и активируйте виртуальное окружение:**
  
     Для Windows:
-    
-     
+
         python -m venv venv
       
         venv\Scripts\activate
         
-  
     Для macOS/Linux:
     
-       
         python3 -m venv venv
        
         source venv/bin/activate
         
-
 **3. Установите зависимости:**
   
-  
     pip install -r requirements.txt
-
-
+    
 **4. Скачайте и подготовьте данные:**
-
    
     Запустите data_loader.py для автоматической загрузки и подготовки исходных данных.
     
@@ -124,25 +115,20 @@
  
     python data_loader.py
 
-
-**5. Запустите Jupyter Notebook и проведите EDA:**
-   
+**5. Запустите Jupyter Notebook и проведите EDA:** 
     
     jupyter notebook
    
     Откройте в браузере папку notebooks/, EDA.ipynb и пошагово выполните анализ.
 
 
-
 **6. Для работы с внешним API и парсингом ферментов используйте скрипты:**
- 
     
     python API_and_parse/fetch_pdb_data.py
   
     python API_and_parse/parse_and_save_pdb.py
    
     Результаты сохраняются в CSV-файл.
-
 
 ---
 
