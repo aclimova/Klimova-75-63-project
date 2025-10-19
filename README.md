@@ -86,7 +86,7 @@
 
 **Данные цитат через API:**  
 API доступен по адресу:  
-`https://quotes.toscrape.com/api/quotes`  
+[Quotes to scrape](https://quotes.toscrape.com/api/quotes)  
 Работа с API и сохранение результатов осуществляется с помощью  
 `API_example/API_reader.py`.
 
@@ -109,7 +109,7 @@ API доступен по адресу:
 <img width="906" height="559" alt="image" src="https://github.com/user-attachments/assets/387d16b5-dee8-4dd9-8c02-794b3c4e2bc6" />
 
 
-**ПРимер загрузки данные в DataBase**
+**ПРимер загрузки данных в DataBase**
 
 <img width="903" height="294" alt="image" src="https://github.com/user-attachments/assets/1518cf2e-3257-4772-a6e2-28bce50bd5c4" />
 
