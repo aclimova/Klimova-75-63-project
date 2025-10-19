@@ -50,24 +50,31 @@
 
 │
 
-├── API_example/
+├── data_loader.py                # Скрипт обработки и загрузки данных о древесине
 
-│   └── API_reader.py       # Парсер и сохранение CSV с данными PDB
+│
 
-├── notebooks/
+├── write_to_db.py                # Скрипт для автоматической записи данных в базу PostgreSQL
 
-│   └── EDA.ipynb       # Jupyter Notebook для аналитики и визуализации (EDA)
+│
 
-├── README.md                       # Информация о проекте
+├── notebooks/                    # Папка с Jupyter Notebook для анализа и визуализации (EDA)
 
-├── data_loader.py                  # Обработка и загрузка данных о древесине
+│   └── EDA.ipynb                 # Notebook для анализа данных
 
-├── requirements.txt                # Установленные зависимости Python
+│
 
-└──  write_to_db.py            # Скрипт для записи данных в базу PostgreSQL
+├── API_example/                  # Скрипты для работы с API цитат
 
+│   └── API_reader.py             # Скрипт для скачивания, парсинга и сохранения цитат
 
+│
 
+├── requirements.txt              # Зависимости — список установленных библиотек
+
+│
+
+└── README.md                     # Документ с инструкциями и описанием проекта
 
 ---
 
