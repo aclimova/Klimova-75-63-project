@@ -98,13 +98,16 @@
 
 ### Примеры визуализации и вывода данных
 
-**Пример EDA по биомассе:**
+**EDA по биомассе:**
 
 <img width="795" height="620" alt="screenshot" src="https://github.com/user-attachments/assets/345ff719-20e7-4dff-99b9-a32712106360" />
 
+**Расширенная и интерактивная визуализация EDA по биомассе:**
+
+[Смотреть ноутбук EDA на nbviewer](https://nbviewer.org/github/aclimova/Klimova-75-63-project/blob/main/notebooks/EDA.ipynb)
 
 
-**ПРимер загрузки данных в DataBase**
+**Загрузка данных в DataBase**
 
 <img width="903" height="294" alt="image" src="https://github.com/user-attachments/assets/1518cf2e-3257-4772-a6e2-28bce50bd5c4" />
 
