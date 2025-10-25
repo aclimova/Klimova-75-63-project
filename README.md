@@ -102,9 +102,9 @@
 
 <img width="795" height="620" alt="screenshot" src="https://github.com/user-attachments/assets/345ff719-20e7-4dff-99b9-a32712106360" />
 
-**Расширенная и интерактивная визуализация EDA по биомассе:**
 
-[Смотреть ноутбук EDA на nbviewer](https://nbviewer.org/github/aclimova/Klimova-75-63-project/blob/main/notebooks/EDA.ipynb)
+
+[Расширенная и интерактивная визуализация EDA на nbviewer](https://nbviewer.org/github/aclimova/Klimova-75-63-project/blob/main/notebooks/EDA.ipynb)
 
 
 **Загрузка данных в DataBase**
