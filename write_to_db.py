@@ -19,6 +19,12 @@ def get_engine():
 def load_and_write_data(engine, table_name):
     df = pd.read_parquet("data/dataset_converted.parquet")
     df = df.head(100)
+    
+    if df.columns[0].startswith("Unnamed"):
+        new_columns = df.columns.tolist()
+        new_columns[0] = "Number"
+        df.columns = new_columns
+    
     df.to_sql(
         name=table_name,
         con=engine,
@@ -33,7 +39,3 @@ if __name__ == "__main__":
     engine = get_engine()
     table_name = "klimova"  
     load_and_write_data(engine, table_name)
-
-    df_check = pd.read_sql_table(table_name, con=engine, schema="public")
-    print("Первые строки из таблицы:")
-    print(df_check)
