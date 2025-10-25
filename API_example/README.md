@@ -5,7 +5,7 @@
 ## Описание
 
 - Используется библиотека `requests` для HTTP-запроса.
-- Загружаются данные персонажа в формате JSON с API https://rickandmortyapi.com/api/character/{id}.
+- Загружаются данные персонажа в формате JSON с API https://rickandmortyapi.com/api/character/108.
 - Полученные данные сохраняются в локальный файл `character_108.json` в JSON-формате.
 
 ## Как использовать
@@ -14,13 +14,11 @@
 
 pip install requests
 
-text
 
 2. Запустите скрипт:
 
 python api_reader.py
 
-text
 
 3. После успешного выполнения в папке появится файл `character_108.json` с данными персонажа с ID 108 (Dr. Xenon Bloom).
 
