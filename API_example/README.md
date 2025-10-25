@@ -17,7 +17,7 @@ pip install requests
 
 2. Запустите скрипт:
 
-python api_reader.py
+'python api_reader.py'
 
 
 3. После успешного выполнения в папке появится файл `character_108.json` с данными персонажа с ID 108 (Dr. Xenon Bloom).
