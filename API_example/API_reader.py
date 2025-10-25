@@ -1,19 +1,13 @@
 import requests
-from bs4 import BeautifulSoup
-import pandas as pd
 
-url = "http://quotes.toscrape.com/"
-response = requests.get(url, timeout=15)
-response.raise_for_status()
-soup = BeautifulSoup(response.content, "html.parser")
+def fetch_character_data(character_id):
+    url = f"https://rickandmortyapi.com/api/character/{character_id}"
+    response = requests.get(url)
+    response.raise_for_status()
+    return response.text 
 
-quotes = []
-for quote_block in soup.select(".quote"):
-    text = quote_block.select_one(".text").get_text(strip=True)
-    author = quote_block.select_one(".author").get_text(strip=True)
-    tags = [tag.get_text(strip=True) for tag in quote_block.select(".tags .tag")]
-    quotes.append({"Quote": text, "Author": author, "Tags": ", ".join(tags)})
-
-df = pd.DataFrame(quotes)
-print(df)
-df.to_csv("quotes.csv", index=False)
+if __name__ == "__main__":
+    json_str = fetch_character_data(108)
+    with open("character_108.json", "w", encoding="utf-8") as f:
+        f.write(json_str)
+    print("Данные загружены и сохранены в character_108.json")
