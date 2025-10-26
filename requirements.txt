@@ -12,3 +12,10 @@ requests>=2.0
 xmltodict>=0.12    
 beautifulsoup4>=4.9
 lxml>=4.6
+sqlalchemy>=2.0
+psycopg2-binary>=2.9
+python-dotenv>=1.0
+plotly>=5.14
+ipywidgets>=7.6
+jupyterlab-widgets
+kaleido>=0.2
