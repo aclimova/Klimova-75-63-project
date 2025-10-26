@@ -113,7 +113,9 @@
 
 .
 
-[Расширенная и интерактивная визуализация EDA на nbviewer](https://nbviewer.org/github/aclimova/Klimova-75-63-project/blob/main/notebooks/EDA.ipynb)
+[Расширенная и интерактивная визуализация EDA на nbviewer]((https://nbviewer.org/github/aclimova/Klimova-75-63-project/blob/main/notebooks/EDA.ipynb?flush_cache=true)
+
+[Расширенная и интерактивная визуализация EDA на GoogleColab](https://colab.research.google.com/github/aclimova/Klimova-75-63-project/blob/main/notebooks/EDA.ipynb)
 
 .
 
