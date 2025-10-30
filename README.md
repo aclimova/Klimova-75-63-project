@@ -1,6 +1,10 @@
 # Проект «Климова-75-63»: Работа с данными, API и EDA
 
 ---
+## Выволнен cookie cutter для проекта!
+
+[Репозиторий с cookie cutter](https://github.com/aclimova/Wood_biomass/blob/main/README.md)
+
 
 ## О проекте
 
