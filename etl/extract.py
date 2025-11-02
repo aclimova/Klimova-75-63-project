@@ -1,22 +1,35 @@
-import pandas as pd
-import os
-import gdown
+import argparse
+from extract import extract_data
+from validate import validate
+from transform import transform
+from load import get_engine, load_and_write_data
 
-def extract_data(file_id: str, output_dir: str = 'data/raw_ds') -> pd.DataFrame:
-    os.makedirs(output_dir, exist_ok=True)
-    save_path = os.path.join(output_dir, 'downloaded_dataset.csv')
-    url = f'https://drive.google.com/uc?id={file_id}'
-  
-    gdown.download(url, save_path, quiet=False)
- 
-    df = pd.read_csv(save_path)
-    
-    if df.empty:
-        raise ValueError('CSV с данными пустой')
-    
-    print(f'Сырые данные сохранены в {save_path}')
-    return df
+def main():
+    parser = argparse.ArgumentParser(description="ETL pipeline")
+    parser.add_argument(
+        "--file_id",
+        type=str,
+        required=True,
+        help="Google Drive file ID для загрузки данных"
+    )
+    parser.add_argument(
+        "--table_name",
+        type=str,
+        default="klimova",
+        help="Имя таблицы в базе данных"
+    )
+
+    args = parser.parse_args()
+
+    df_raw = extract_data(args.file_id)
+
+    if not validate(df_raw):
+        print("Валидация не пройдена. Завершение работы.")
+        return
+
+    df_transformed = transform(df_raw)
+    engine = get_engine()
+    load_and_write_data(engine, table_name=args.table_name)
 
 if __name__ == "__main__":
-    FILE_ID = "1U3DpetAYEV6RiAhVdqMXeu1nmz0C45ec"
-    extract_data(FILE_ID)
+    main()
